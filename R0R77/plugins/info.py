@@ -8,20 +8,20 @@ from telethon.tl.functions.users import GetFullUserRequest
 
 
 MISC_HELP = """
-**✘ بعض اوامر البسيطة للكشف والايدي.**
+**بعض اوامر البسيطة للكشف والايدي.**
 
-!الايدي
-بالرد على المستخدم لأظهار ايديه او ايدي المجموعة
+الايدي
+بالرد على المستخدم لأظهار ايديه او ايدي المجموعة من دون معلومات
 
-!ايدي
-لعرض معلومات المستخدم بالرد عليه
+ايدي
+لعرض معلومات المستخدم وايديه
 """
 
-@R0R77.on(events.NewMessage(pattern="^[!?/]الايدي"))
+@R0R77.on(events.NewMessage(pattern="الايدي"))
 async def id(event):
 
     if event.is_private:
-       await event.reply(f"الايدي الخاص بك هو`{event.sender_id}`.")
+       await event.reply(f"الايدي الخاص بك هو : `{event.sender_id}`")
        return
 
     ID = """
@@ -34,9 +34,9 @@ async def id(event):
       await event.reply(ID.format(event.chat_id, event.sender_id))
       return
 
-    await event.reply(f"المستخدم {msg.sender.first_name} /n الايدي `{msg.sender_id}`.")
+    await event.reply(f"المستخدم {msg.sender.first_name} الايدي `{msg.sender_id}`")
  
-@R0R77.on(events.NewMessage(pattern="^[!?/]ايدي ?(.*)"))
+@R0R77.on(events.NewMessage(pattern="ايدي"))
 async def info(event):
 
     sed = await R0R77(P(user_id=event.sender_id, offset=42, max_id=0, limit=80))
