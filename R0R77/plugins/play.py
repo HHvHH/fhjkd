@@ -228,6 +228,7 @@ async def play(event):
 
 #end
 @R0R77.on(events.NewMessage(pattern="انهاء"))
+@is_admin
 async def vc_end(event, perm):
     chat_id = event.chat_id
     if chat_id in QUEUE:
@@ -408,6 +409,7 @@ async def vplay(event):
 
 #playlist
 @R0R77.on(events.NewMessage(pattern="التشغيل"))
+@is_admin
 async def vc_playlist(event, perm):
     chat_id = event.chat_id
     if chat_id in QUEUE:
@@ -437,6 +439,7 @@ async def vc_playlist(event, perm):
 
 #كود المغادرة
 @R0R77.on(events.NewMessage(pattern="مغادرة"))
+@is_admin
 async def leavevc(event, perm):
     razan = await event.reply("ثوان . . .")
     chat_id = event.chat_id
@@ -453,6 +456,7 @@ async def leavevc(event, perm):
 
 
 @R0R77.on(events.NewMessage(pattern="تخطي"))
+@is_admin
 async def vc_skip(event, perm):
     chat_id = event.chat_id
     if len(event.text.split()) < 2:
@@ -481,6 +485,7 @@ async def vc_skip(event, perm):
 
 
 @R0R77.on(events.NewMessage(pattern="ايقاف"))
+@is_admin
 async def vc_pause(event, perm):
     chat_id = event.chat_id
     if chat_id in QUEUE:
@@ -495,6 +500,7 @@ async def vc_pause(event, perm):
 
 
 @R0R77.on(events.NewMessage(pattern="استئناف"))
+@is_admin
 async def vc_resume(event, perm):
     chat_id = event.chat_id
     if chat_id in QUEUE:
