@@ -13,7 +13,7 @@ ALIVE = os.environ.get(
     "ALIVE", "@HssHH"
 )
 
-CAPTION = f"**سرعة البنك:** {ms}\n المالك:『{ALIVE}』"
+CAPTION = f"**سرعة البنق :** {ms}"
 
 
 @R0R77.on(events.NewMessage(pattern="^/ping"))
