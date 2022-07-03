@@ -25,7 +25,13 @@ async def start(event):
        return
 
     if event.is_group:
-       await event.reply("**- اهلا بك انا اعمل بنجاح**")
+       await event.client.send_file(event.chat_id,
+             Config.START_IMG,
+             caption=PM_START_TEXT.format(event.sender.first_name), 
+             buttons=[
+        [Button.url("أضفني الى مجموعتك", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+        [Button.url("Hasoni Alnajar", f"https://t.me/hsshh"), Button.url("Ch", f"https://t.me/hasoni_lq")],
+        [Button.inline("الاوامر", data="help")]])
        return
 
 
