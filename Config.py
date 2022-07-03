@@ -1,13 +1,13 @@
 import os
 
 class Config(object):
-    API_ID = int(os.environ.get("APP_ID", "6435225"))
-    API_HASH = os.environ.get("API_HASH", "4e984ea35f854762dcde906dce426c2d")
+    API_ID = int(os.environ.get("APP_ID", "19351645"))
+    API_HASH = os.environ.get("API_HASH", "359f66a067069b8b5c482df6a8a4e3b8)
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     STRING_SESSION = os.environ.get("STRING_SESSION", "")
     HEROKU_MODE = os.environ.get("HEROKU_MODE", None)
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "JMTHON_ROBOT")
-    SUPPORT = os.environ.get("SUPPORT", "JMTHON_SUPPORT")
-    CHANNEL = os.environ.get("CHANNEL", "JMTHON")
-    START_IMG = os.environ.get("START_IMG", "https://telegra.ph/file/2ad68bd0e391a69163d0a.jpg")
-    CMD_IMG = os.environ.get("CMD_IMG", "https://telegra.ph/file/66518ed54301654f0b126.png")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "o7Tbot")
+    SUPPORT = os.environ.get("SUPPORT", "HASONI_LQ")
+    CHANNEL = os.environ.get("CHANNEL", "HASONI_LQ")
+    START_IMG = os.environ.get("START_IMG", "https://telegra.ph/file/7e896dba43e7e25106e4e.jpg")
+    CMD_IMG = os.environ.get("CMD_IMG", "https://telegra.ph/file/7e896dba43e7e25106e4e.jpg")
