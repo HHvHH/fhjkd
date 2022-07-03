@@ -10,12 +10,12 @@ from telethon.tl.functions.messages import ExportChatInviteRequest
 @R0R77.on(events.callbackquery.CallbackQuery(data="admin"))
 async def _(event):
 
-    await event.edit(ADMIN_TEXT, buttons=[[Button.inline("« رجوع", data="help")]])
+    await event.edit(ADMIN_TEXT, buttons=[[Button.inline("رجوع", data="help")]])
 
 @R0R77.on(events.callbackquery.CallbackQuery(data="play"))
 async def _(event):
 
-    await event.edit(PLAY_TEXT, buttons=[[Button.inline("« رجوع", data="help")]])
+    await event.edit(PLAY_TEXT, buttons=[[Button.inline("رجوع", data="help")]])
 
 @R0R77.on(events.NewMessage(pattern="^[!?/]رفع ?(.*)"))
 @is_admin
@@ -87,7 +87,7 @@ async def invitelink(event):
     await event.reply(f"المجموعة {event.chat.title}الرابط: [اضغط هنا]({link.link})", link_preview=False)
 
 ADMIN_TEXT = """
-**✘ جميع اوامر الادمن تحتاج الى ان تكون مشرف**
+**جميع اوامر الادمن تحتاج الى ان تكون مشرف**
 
 !رفع
 ( لرفع المستخدم مشرف )
@@ -118,7 +118,7 @@ ADMIN_TEXT = """
 """
 
 PLAY_TEXT = """
-**✘ اوامر المستخدمين العاديين!**
+**اوامر المستخدمين**
 
 !تشغيل
 لتشغيل المقطع الصوتي في المكالمه اكتب الامر 
