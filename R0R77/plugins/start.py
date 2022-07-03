@@ -3,16 +3,9 @@ from Config import Config
 from telethon import events, Button
 
 PM_START_TEXT = """
-اهلا بك ! {}
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-✘انا بوت بسيط لحماية مجموعتك وتشغيل المقاطع الصوتية في المكالمه**.
-‣ **استطيع تشغيل المقاطع الصوتية في المكالمة**.
-‣ **استطيع حظر و كتم اي مستخدم**.
-‣ **افضل بوت من ناحية المميزات**
-‣ **يعتمد على مكتبة التيليثون لذلك يكون البوت سريع**!
-‣ **اكتشف الباقي بنفسك**.
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-✘ **اضغط على الاسفل لعرض الاوامر الخاص ه بي**.
+أهلا بك عزيزي {} في بوت تشغيل الاغاني في المحادثه الصوتيه
+
+- أستطيع تشغيل الاغاني في المحادثه الصوتيه بسرعة وجودة عاليه 
 """
 
 @R0R77.on(events.NewMessage(pattern="^[?!/]start$"))
@@ -23,9 +16,8 @@ async def start(event):
              Config.START_IMG,
              caption=PM_START_TEXT.format(event.sender.first_name), 
              buttons=[
-        [Button.url("➕ اضغط هنا لأضافتي", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-        [Button.url("السورس", "https://github.com/R0R77/Telethon-Music")],
-        [Button.url("الدعم", f"https://t.me/{Config.SUPPORT}"), Button.url("القناة", f"https://t.me/{Config.CHANNEL}")],
+        [Button.url("أضفني الى مجموعتك", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+        [Button.url("Hasoni Alnajar", f"https://t.me/hsshh"), Button.url("Ch", f"https://t.me/hasoni_lq")],
         [Button.inline("الاوامر", data="help")]])
        return
 
@@ -39,8 +31,7 @@ async def start(event):
 async def _(event):
     if event.is_private:
        await event.edit(PM_START_TEXT.format(event.sender.first_name), buttons=[
-        [Button.url("➕ اضغط هنا لاضافتي", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-        [Button.url("السورس", "https://github.com/R0R77/Telethon-Music")],
-        [Button.url("الدعم", f"https://t.me/{Config.SUPPORT}"), Button.url("القناة", f"https://t.me/{Config.CHANNEL}")],
+        [Button.url("أضفني الى مجموعتك", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+        [Button.url("Hasoni Alnajar", f"https://t.me/hsshh"), Button.url("Ch", f"https://t.me/hasoni_lq")],
         [Button.inline("الاوامر", data="help")]])
        return
