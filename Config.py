@@ -9,5 +9,5 @@ class Config(object):
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "o7Tbot")
     SUPPORT = os.environ.get("SUPPORT", "HASONI_LQ")
     CHANNEL = os.environ.get("CHANNEL", "HASONI_LQ")
-    START_IMG = os.environ.get("START_IMG", "https://telegra.ph/file/7e896dba43e7e25106e4e.jpg")
-    CMD_IMG = os.environ.get("CMD_IMG", "https://telegra.ph/file/7e896dba43e7e25106e4e.jpg")
+    START_IMG = os.environ.get("START_IMG", "https://telegra.ph/file/9157151068a4f3cae8445.jpg")
+    CMD_IMG = os.environ.get("CMD_IMG", "https://telegra.ph/file/9157151068a4f3cae8445.jpg")
