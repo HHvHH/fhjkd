@@ -20,7 +20,7 @@ async def start(event):
              caption=PM_START_TEXT.format(event.sender.first_name), 
              buttons=[
         [Button.url("أضفني الى مجموعتك", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-        [Button.url("Hasoni Alnajar", f"https://t.me/hsshh"), Button.url("Ch", f"https://t.me/hasoni_lq")],
+        [Button.url("Haider .", f"https://t.me/hvvhh"), Button.url("Ch", f"https://t.me/deoou")],
         [Button.inline("الاوامر", data="help")]])
        return
 
@@ -30,7 +30,7 @@ async def start(event):
              caption=PM_START_TEXT.format(event.sender.first_name), 
              buttons=[
         [Button.url("أضفني الى مجموعتك", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-        [Button.url("Hasoni Alnajar", f"https://t.me/hsshh"), Button.url("Ch", f"https://t.me/hasoni_lq")],
+        [Button.url("Haider .", f"https://t.me/hvvhh"), Button.url("Ch", f"https://t.me/deoou")],
         [Button.inline("الاوامر", data="help")]])
        return
 
@@ -41,6 +41,6 @@ async def _(event):
     if event.is_private:
        await event.edit(PM_START_TEXT.format(event.sender.first_name), buttons=[
         [Button.url("أضفني الى مجموعتك", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-        [Button.url("Hasoni Alnajar", f"https://t.me/hsshh"), Button.url("Ch", f"https://t.me/hasoni_lq")],
+        [Button.url("Haider .", f"https://t.me/hsshh"), Button.url("Ch", f"https://t.me/deoou")],
         [Button.inline("الاوامر", data="help")]])
        return
