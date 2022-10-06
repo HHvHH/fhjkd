@@ -149,7 +149,7 @@ async def play(event):
     ):
         return await event.client.send_file(chat_id, Config.CMD_IMG, caption="**يجب عليك كتابة عنوان الشيء الذي تريد تشغيله**\n\n **مثال**: `!تشغيل سورة الكهف`", buttons=btnn)
     elif replied and not replied.audio and not replied.voice or not replied:
-        botman = await event.reply("يتم التعرف على الجفصه . . .")
+        botman = await event.reply("يتم التعرف . . .")
         query = event.text.split(maxsplit=1)[1]
         search = ytsearch(query)
         if search == 0:
