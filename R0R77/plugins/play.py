@@ -25,8 +25,8 @@ from telethon.tl.functions.users import GetFullUserRequest
 from youtubesearchpython import VideosSearch
 
  
-fotoplay = "https://telegra.ph/file/9381a140aafbb75177300.jpg"
-ngantri = "https://telegra.ph/file/9381a140aafbb75177300.jpg"
+fotoplay = "https://telegra.ph/file/16c8c27938bc7ac235436.jpg"
+ngantri = "https://telegra.ph/file/16c8c27938bc7ac235436.jpg"
 from R0R77 import call_py, R0R77, client as Client
 owner = "668571162"
 from R0R77.helpers.yt_dlp import bash
