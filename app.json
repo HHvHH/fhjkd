@@ -1,12 +1,18 @@
 {
-    "name": "Telethon Music Bot",
-    "description": "Music allow you to stream music trought the telegram voice chat feature Based on Telethon.",
-    "keywords": ["hasoni_lq", "hso", "music", "voice chat", "telegram", "Yukki", "Yukki Music", "Private Music", "telethon"],
-    "repository": "https://github.com/clipesr/fhjkd",
+    "name": "سورس هنترثون ميوزك",
+    "description": "سورس ميوزك لتشغيل الاغاني في المحادثات الصوتية .",
+    "keywords": ["haider", "hdo", "music", "voice chat", "telegram", "Yukki", "Yukki Music", "Private Music", "telethon"],
+    "repository": "",
   "stack": "container",
     "env": {
+        "APP_ID": {
+            "description": "ضع هنا الايبي ايدي حساب المساعد استخدم هذا 23308690"
+	},
+        "API_HASH": {
+            "description": "ضع هنا الايبي هاش حساب المساعد استخدم هذا 0a64b7fb353afea42c8847bd5ae5c744"    
+        },
         "STRING_SESSION": {
-            "description": "يرجى وضع كود سيشن تيليثون للحساب المساعد هنا ",
+            "description": "يرجى وضع كود سيشن تليثون (كود تيرمكس) للحساب المساعد هنا ",
             "required": true
         },
         "HEROKU_MODE": {
@@ -17,12 +23,12 @@
         "SUPPORT": {
             "description": "ضع هنا معرف مجموعتك او قناتك بدون @",
             "required": false,
-            "value": "HssHH"
+            "value": "HvvHH"
         },
         "CHANNEL": {
             "description": "ضع معرف قناتك اذا اردت غير ذلك اتركها ",
             "required": false,
-            "value": "HssHH"
+            "value": "HvvHH"
         },
         "BOT_USERNAME": {
             "description": "هنا ضع معرف البوت بدون @",
@@ -31,6 +37,11 @@
         },
         "BOT_TOKEN": {
             "description": "هنا ضع توكن بوتك",
+            "required": true,
+            "value": ""
+		},
+       "OWNER_ID": {
+            "description": "هنا ضع ايدي المطور",
             "required": true,
             "value": ""
         }
